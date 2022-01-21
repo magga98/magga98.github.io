@@ -19,7 +19,7 @@ window.onload = function init()
     // First, initialize the corners of our gasket with three points.
 
     var vertices = [
-        vec2( -1, -1 ),
+        vec2( 100, 100 ),
         vec2(  0,  1 ),
         vec2(  1, -1 )
     ];
@@ -29,7 +29,7 @@ window.onload = function init()
 
     var u = add( vertices[0], vertices[1] );
     var v = add( vertices[0], vertices[2] );
-    var p = scale( 0.25, add( 100, 100 ) );
+    var p = scale( 0.25, add( u, v ) );
 
     // And, add our initial point into our array of points
 
